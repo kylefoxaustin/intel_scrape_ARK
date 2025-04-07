@@ -27,3 +27,11 @@ an example product page is here: https://www.intel.com/content/www/us/en/product
 The script will extract the Service Status field in each product page and repopulate the original spreadsheet with it.
 
 You can modify the script to pull any data from the product page you wish. 
+
+How to use the script: 
+
+input_file = 'intel_processors.xlsx'  # Your input spreadsheet
+output_file = 'intel_processors_with_service_status.xlsx'  # Output spreadsheet
+update_spreadsheet_with_service_status(input_file, output_file)
+
+the input and output files will be in the same directory as the python script
