@@ -31,7 +31,6 @@ You can modify the script to pull any data from the product page you wish.
 How to use the script: 
 
 python3 scrape_service_status.py input.ods output.xlsx  --or--
-
 python3 scrape_service_status.py input.xlsx output.xlsx --or--
 
 python3 scrape_service_status.py input.ods output.ods   --or--
