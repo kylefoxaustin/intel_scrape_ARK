@@ -1,9 +1,4 @@
-Input:
-a spreadsheet table in this format
-         Product Name          |  Launch Date  |  Total Cores  |  Max Turbo Frequency  |  Processor Base Frequency  |  Cache  | TDP
-Intel® Xeon® 6503P-B Processor | 	   Q1'25	   |     12	       |     3.5 GHz	         |          2 GHz	            |  48 MB  | 110 W
-      ^^^This is a URL link^^^
--- Note the column header text does not matter, the script will skip the first line in the spreadsheet
+
 
 # Intel Product Page Scraper
 
@@ -11,7 +6,7 @@ A tool for downloading Intel product specification pages and extracting service 
 Specifically this focuses on Intel products with the 'Embedded Option' flag set to yes on the Intel ARK 
 website: https://www.intel.com/content/www/us/en/ark/featurefilter.html?productType=873&0_Embedded=True 
 
-Pre-requisites:
+# Pre-requisites:
 an .ods or .xlsx file which contains at a minimum the URL(s) to a specific processor page
 e.g. https://www.intel.com/content/www/us/en/products/sku/242897/intel-xeon-6503pb-processor-48m-cache-2-00-ghz/specifications.html 
 
@@ -21,6 +16,14 @@ e.g. https://www.intel.com/content/www/us/en/products/sku/242897/intel-xeon-6503
 3) click 'Show More' at the bottom of the page (if more than 50 processors are available)
 4) highlight the entire table, copy it and paste it into an .xlsx or .ods spreadsheet file
 5) name the file.   it will be used in the script exectuion below. 
+
+# Structure of the input file: 
+Input:
+a spreadsheet table in this format
+         Product Name          |  Launch Date  |  Total Cores  |  Max Turbo Frequency  |  Processor Base Frequency  |  Cache  | TDP
+Intel® Xeon® 6503P-B Processor | 	   Q1'25	   |     12	       |     3.5 GHz	         |          2 GHz	            |  48 MB  | 110 W
+      ^^^This is a URL link^^^
+-- Note the column header text does not matter, the script will skip the first line in the spreadsheet
 
 ## Overview
 
