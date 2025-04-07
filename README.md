@@ -30,8 +30,9 @@ You can modify the script to pull any data from the product page you wish.
 
 How to use the script: 
 
-input_file = 'intel_processors.xlsx'  # Your input spreadsheet
-output_file = 'intel_processors_with_service_status.xlsx'  # Output spreadsheet
-update_spreadsheet_with_service_status(input_file, output_file)
+python3 scrape_service_status.py input.ods output.xlsx  --or--
+python3 scrape_service_status.py input.xlsx output.xlsx --or--
+python3 scrape_service_status.py input.ods output.ods   --or--
+python3 scrape_service_status.py input.xlsx output.ods
 
 the input and output files will be in the same directory as the python script
