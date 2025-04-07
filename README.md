@@ -3,7 +3,9 @@ Designed to scrape Intel's ARK for embedded processors
 
 do this in a virtual env for python dependencies (recommended but not absolutely required)
 need python 3.6 or higher (tested on 3.10)
-you need several python packages installed (pip install pandas requests beautifulsoup4 openpyxl) 
+
+you need several python packages installed (pip install pandas requests beautifulsoup4 openpyxl odfpy)
+
 you need to have installed chromedriver on your PC (not as a python package)
 
 Input:
