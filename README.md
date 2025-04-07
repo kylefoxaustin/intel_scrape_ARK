@@ -23,7 +23,7 @@ a spreadsheet table in this format
 
          Product Name          |  Launch Date  |  Total Cores  |  Max Turbo Frequency  |  Processor Base Frequency  |  Cache  | TDP
          
-Intel® Xeon® 6503P-B Processor | 	   Q1'25	   |     12	       |     3.5 GHz	         |          2 GHz	            |  48 MB  | 110 W
+         Intel® Xeon® 6503P-B Processor | 	   Q1'25	   |     12	       |     3.5 GHz	         |          2 GHz	            |  48 MB  | 110 W
       ^^^This is a URL link^^^
 -- Note the column header text does not matter, the script will skip the first line in the spreadsheet
 
