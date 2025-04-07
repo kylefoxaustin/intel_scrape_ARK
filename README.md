@@ -20,6 +20,7 @@ e.g. https://www.intel.com/content/www/us/en/products/sku/242897/intel-xeon-6503
 # Structure of the input file: 
 Input:
 a spreadsheet table in this format
+
          Product Name          |  Launch Date  |  Total Cores  |  Max Turbo Frequency  |  Processor Base Frequency  |  Cache  | TDP
 Intel® Xeon® 6503P-B Processor | 	   Q1'25	   |     12	       |     3.5 GHz	         |          2 GHz	            |  48 MB  | 110 W
       ^^^This is a URL link^^^
