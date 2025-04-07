@@ -2,7 +2,10 @@
 
 # Intel Product Page Scraper
 
-A tool for downloading Intel product specification pages and extracting service status information.
+A tool for downloading Intel product specification pages and extracting service status information with basic
+processor features (launch date, total cores, max frequency, base frequency, cache size, tdp).
+The service status information indicates whether a processor is fully supported, no longer supported or other information.
+
 Specifically this focuses on Intel products with the 'Embedded Option' flag set to yes on the Intel ARK 
 website: https://www.intel.com/content/www/us/en/ark/featurefilter.html?productType=873&0_Embedded=True 
 
@@ -27,14 +30,17 @@ a spreadsheet table in this format
       ^^^This is a URL link^^^
 -- Note the column header text does not matter, the script will skip the first line in the spreadsheet
 
-## Overview
+## Overview of the project and how to use
 
 This project consists of two main scripts:
 
-1. `scrape.py` - Downloads HTML content from Intel product pages while bypassing anti-scraping measures
-2. `extract_status.py` - Extracts service status information from the downloaded HTML files
+1. `scrape.py` - Downloads HTML content from Intel product pages included in the input_file.xlsx (can be named any namne) 
+2. `extract_status.py` - Extracts service status information from the downloaded HTML files from scrape.py and outputs to a named file
 
-The scraper handles Intel's anti-scraping protections by using multiple request methods and adding appropriate delays between requests. It can extract hyperlinks from ODS/Excel files and download the corresponding web pages.
+scrape.py can extract hyperlinks from ODS/Excel files and download the corresponding web pages. There are multiple methods the script uses to pull the web pages. 
+extract_status.py consolidates all the information into a new .xlsx/.ods file including the service status field. 
+
+You can modify the script to include more information than just the service status field. 
 
 ## Requirements
 
