@@ -31,6 +31,7 @@ You can modify the script to pull any data from the product page you wish.
 How to use the script: 
 
 python3 scrape_service_status.py input.ods output.xlsx  --or--
+
 python3 scrape_service_status.py input.xlsx output.xlsx --or--
 
 python3 scrape_service_status.py input.ods output.ods   --or--
@@ -39,7 +40,7 @@ python3 scrape_service_status.py input.xlsx output.ods
 
 advanced usage: 
 
-# If your product name column is not the default "Product Name"
+** If your product name column is not the default "Product Name**
 python3 scrape_service_status.py input.ods output.xlsx --product-column "Processor Name"
 
 the input and output files will be in the same directory as the python script
